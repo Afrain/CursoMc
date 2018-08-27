@@ -18,6 +18,7 @@ import com.udemy.curso.domain.PagamentoComBoleto;
 import com.udemy.curso.domain.PagamentoComCartao;
 import com.udemy.curso.domain.Pedido;
 import com.udemy.curso.domain.Produto;
+import com.udemy.curso.domain.itemPedido;
 import com.udemy.curso.domain.enums.EstadoPagamento;
 import com.udemy.curso.domain.enums.TipoCliente;
 import com.udemy.curso.repositories.CategoriaRepository;
@@ -25,6 +26,7 @@ import com.udemy.curso.repositories.CidadeRepository;
 import com.udemy.curso.repositories.ClienteRepository;
 import com.udemy.curso.repositories.EnderecoRepository;
 import com.udemy.curso.repositories.EstadoRepository;
+import com.udemy.curso.repositories.ItemPedidoRepository;
 import com.udemy.curso.repositories.PagamentoRepository;
 import com.udemy.curso.repositories.PedidoRepository;
 import com.udemy.curso.repositories.ProdutoRepository;
@@ -48,6 +50,8 @@ public class CursoMcApplication implements CommandLineRunner {
 	private PedidoRepository pedidoRepository;
 	@Autowired
 	private PagamentoRepository pagamentoRepository;
+	@Autowired
+	private ItemPedidoRepository itemPedidoRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(CursoMcApplication.class, args);
@@ -110,6 +114,13 @@ public class CursoMcApplication implements CommandLineRunner {
 		
 		pedidoRepository.saveAll(Arrays.asList(ped1,ped2));
 		pagamentoRepository.saveAll(Arrays.asList(pagto1,pagto2));
+		
+		itemPedido ip1 = new itemPedido(ped1, p1, 0.00, 1, 2000.00);
+		itemPedido ip2 = new itemPedido(ped1, p3, 0.00, 2, 80.00);
+		itemPedido ip3 = new itemPedido(ped2, p2, 100.00, 1, 800.00);
+		
+		itemPedidoRepository.saveAll(Arrays.asList(ip1,ip2,ip3));
+		
 		
 	}
 

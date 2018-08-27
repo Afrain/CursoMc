@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 import com.udemy.curso.domain.enums.EstadoPagamento;
 
 @Entity
-public class PagamentoComCartao extends Pagamento{
+public class PagamentoComCartao extends Pagamento {
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -27,7 +27,5 @@ public class PagamentoComCartao extends Pagamento{
 	public void setNumeroDeParcelas(Integer numeroDeParcelas) {
 		this.numeroDeParcelas = numeroDeParcelas;
 	}
-	
-	
 
 }
