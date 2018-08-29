@@ -1,4 +1,4 @@
- package com.udemy.curso.services;
+package com.udemy.curso.services;
 
 import java.util.Optional;
 
@@ -11,16 +11,16 @@ import com.udemy.curso.services.exceptions.ObjectNotFoundException;
 
 @Service
 public class ClienteService {
-	
+
 	@Autowired
 	private ClienteRepository repo;
 
 	public Cliente find(Integer id) {
 		Optional<Cliente> obj = repo.findById(id);
-		
-		return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado! Id: "+ id 
-				+ ", Tipo: " + Cliente.class.getName()));
-		
+
+		return obj.orElseThrow(() -> new ObjectNotFoundException(
+				"Objeto não encontrado! Id: " + id + ", Tipo: " + Cliente.class.getName()));
+
 	}
-	
+
 }
