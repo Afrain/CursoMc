@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.data.domain.Page;
 
 import com.udemy.curso.domain.Categoria;
+import com.udemy.curso.dto.CategoriaDTO;
 import com.udemy.curso.repositories.CategoriaRepository;
 import com.udemy.curso.services.exceptions.DataIntegrityException;
 import com.udemy.curso.services.exceptions.ObjectNotFoundException;
@@ -57,6 +58,10 @@ public class CategoriaService {
 		PageRequest pageRequest = PageRequest.of(page, linesPerPage, Direction.valueOf(direction), orderBy);
 		return repo.findAll(pageRequest);
 
+	}
+	
+	public Categoria fromDto(CategoriaDTO objDto) {
+		return new Categoria(objDto.getId(), objDto.getNome());
 	}
 
 }
