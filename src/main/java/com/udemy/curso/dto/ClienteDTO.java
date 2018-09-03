@@ -2,13 +2,14 @@ package com.udemy.curso.dto;
 
 import java.io.Serializable;
 
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 
 import org.hibernate.validator.constraints.Length;
 
-import com.udemy.curso.domain.Categoria;
+import com.udemy.curso.domain.Cliente;
 
-public class CategoriaDTO implements Serializable {
+public class ClienteDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -18,13 +19,17 @@ public class CategoriaDTO implements Serializable {
 	@Length(min = 5, max = 80, message = "O tamanho deve ser entre 5 e 80 caracteres!")
 	private String nome;
 
-	public CategoriaDTO() {
+	@Email(message="Não é um endereço de email válido!")
+	private String email;
+
+	public ClienteDTO() {
 
 	}
 
-	public CategoriaDTO(Categoria obj) {
+	public ClienteDTO(Cliente obj) {
 		this.id = obj.getId();
 		this.nome = obj.getNome();
+		this.email = obj.getEmail();
 	}
 
 	public Integer getId() {
@@ -41,6 +46,14 @@ public class CategoriaDTO implements Serializable {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 }
