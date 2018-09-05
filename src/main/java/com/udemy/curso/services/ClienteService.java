@@ -55,12 +55,12 @@ public class ClienteService {
 		return clienteRepository.save(newObj);
 	}
 
-	public void delete(Cliente obj) {
-		find(obj.getId());
+	public void delete(Integer id) {
+		find(id);
 		try {
-			clienteRepository.delete(obj);
+			clienteRepository.deleteById(id);
 		}catch(DataIntegrityViolationException e){
-			throw new DataIntegrityException("Não é possivel excluir um cliente com outras tabelas vinculadas a ele!");
+			throw new DataIntegrityException("Não é possivel excluir um cliente com pedidos vinculados a ele!");
 		}
 	}
 	

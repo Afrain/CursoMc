@@ -57,7 +57,7 @@ public class ClienteResource {
 	public ResponseEntity<Void> delete(@Valid @RequestBody ClienteDTO objDTO, @PathVariable Integer id) {
 		Cliente obj = service.fromDTO(objDTO);
 		obj.setId(id);
-		service.delete(obj);
+		service.delete(obj.getId());
 		return ResponseEntity.noContent().build();
 	}
 
