@@ -2,22 +2,45 @@ package com.udemy.curso.dto;
 
 import java.io.Serializable;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+
+import org.hibernate.validator.constraints.Length;
+
+import com.udemy.curso.services.validation.ClienteInsert;
+
+@ClienteInsert
 public class ClienteNewDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	@NotEmpty(message="Campo não pode ser vazio!")
+	@Length(min=5,max=80, message="O tamanho deve ser entre 5 e 80 caracteres!")
 	private String nome;
+	
+	@NotEmpty(message="Campo não pode ser vazio!")
+	@Email(message="Informe um email válido!")
 	private String email;
+	
 	private String cpfOuCnpj;
 	private Integer tipo;
 
+	@NotEmpty(message="Campo não pode ser vazio!")
 	private String logradouro;
+	
+	@NotEmpty(message="Campo não pode ser vazio!")
 	private String numero;
 	private String complemento;
+	
+	@NotEmpty(message="Campo não pode ser vazio!")
 	private String bairro;
+	
+	@NotEmpty(message="O campo não pode ser vázio!")
 	private String cep;
 
+	@NotEmpty(message="O campo não pode ser vázio!")
 	private String telefone1;
+	
 	private String telefone2;
 	private String telefone3;
 	
