@@ -1,0 +1,179 @@
+[33mcommit 8b7cdf0c253ca6257e4e57d4812d7078c0ee1949[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Tue Oct 2 06:40:46 2018 -0300
+
+    Busca de produtos por nome e categorias
+
+[33mcommit 05b4a5da923a2a0deb484334e144955b1075fcbe[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Tue Sep 25 08:48:32 2018 -0300
+
+    Validação customizada: email não repetido na atualização de cliente
+
+[33mcommit 0a6f1610ac4b4a6d2055c3e63c44d37205c11f66[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Tue Sep 25 06:55:45 2018 -0300
+
+    email não repetido na inserção do cliente
+
+[33mcommit aca3f0e6256552e9de2e2fa93ab0d42d88557624[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Mon Sep 24 09:46:48 2018 -0300
+
+    Validação customizada de CPF ou CNPJ na insercao de cliente
+
+[33mcommit d7a1e463d96f861d176b3fae6c7676293aa40132[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Wed Sep 5 17:00:35 2018 -0300
+
+    Ajustando e testando a deleção de Cliente
+
+[33mcommit c4960b6202dea4856c794bada547b8535921475d[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Mon Sep 3 23:13:57 2018 -0300
+
+    Inserindo um novo Cliente com POST
+
+[33mcommit 26bcb930983c886d82d293ca0a84210681535e70[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Mon Sep 3 16:34:47 2018 -0300
+
+    Update em CategoriaService e construtor de Pagamento
+
+[33mcommit 7eaf2ad73c45eeefad9f2b8d2e8f9c32833ff7ff[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Mon Sep 3 16:16:02 2018 -0300
+
+    PUT DELETE E GET PARA CLIENTE
+
+[33mcommit 0e8b161fa5ecdabefecb8e5e13b19d579c7c8340[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Thu Aug 30 10:59:39 2018 -0300
+
+    Personalizando o retorno de validação
+
+[33mcommit acbb0647bc474699ab90ecdbdf30755e44ee8865[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Thu Aug 30 07:39:53 2018 -0300
+
+    Validacao sintatica com Bean Validation
+
+[33mcommit b0b242cac453dd4ecaa6247fe68e073ed809dfd5[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Wed Aug 29 19:16:35 2018 -0300
+
+    Paginação com parametros opcionais na requisição
+
+[33mcommit a66509456ea86dab36514df1c8cfeb0b2f698695[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Wed Aug 29 18:11:38 2018 -0300
+
+    Listando todas as Categorias com DTO
+
+[33mcommit 64d23878acae0f5df0b1728b30cf0860511b93a3[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Wed Aug 29 13:21:41 2018 -0300
+
+    Deletando uma Categoria com DELETE
+
+[33mcommit 2642855bdd6f0d515556bf98404a5af3e46aad0d[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Tue Aug 28 18:49:26 2018 -0300
+
+    Atualizando Categoria com PUT, e outros pequenos ajustes
+
+[33mcommit 9600424faeb0ff8b3fc9c979f2c1b62a00e2a7e9[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Tue Aug 28 17:23:15 2018 -0300
+
+    Inserindo uma nova categoria com POST
+
+[33mcommit 05fb8e34a55aeec141fd65a5f9f97f9c80de968b[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Mon Aug 27 17:34:08 2018 -0300
+
+    Atualização: utilizando soment JsonIgnore
+
+[33mcommit 1a1e979f53c687129b979bb3b3d35986450366d0[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Mon Aug 27 17:23:05 2018 -0300
+
+    Endpoint /pedidos/{id} disponibilizado
+
+[33mcommit 1126ed68705b1a5589a179111abd4bf540dd2131[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Mon Aug 27 16:12:29 2018 -0300
+
+    itemPedido e ItemPedidoPK
+
+[33mcommit a2881c78633937e3dddbed2e52d02c74ed14aab4[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Fri Aug 24 14:53:38 2018 -0300
+
+    Pedido, EstadoPagamento e Pagamento
+
+[33mcommit 04e285bc547eaaea73ede8af79f5727195b8b88f[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Wed Aug 22 14:47:53 2018 -0300
+
+    Endpoint /clientes/{id} disponivel
+
+[33mcommit 9643180c55e7c108af6976dfccbb92d9c9b1f772[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Wed Aug 22 13:45:29 2018 -0300
+
+    Cliente, TipoCliente, Telefones e endereços
+
+[33mcommit 14cc68fcaa1b121b39eb9bb4a5ffe208416ca363[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Tue Aug 21 21:30:51 2018 -0300
+
+    Estado e Cidade
+
+[33mcommit 00053c9149a8d3fdc320ed8c064cfc2fa6c045f0[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Sat Aug 18 09:50:10 2018 -0300
+
+    Ajustes no endPoint /categorias/{id}
+
+[33mcommit 671acf3aa4743f29850e37d41e74c6b039046df5[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Fri Aug 17 16:27:08 2018 -0300
+
+    Produto e associação muitos para muitos
+
+[33mcommit 4dad690c346d3e192887cebf1161e735ae25978d[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Fri Aug 17 15:17:20 2018 -0300
+
+    Criando operação de instanciação
+
+[33mcommit 64684adf2e5c3972bf4c16a23c8fce45bfa46066[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Fri Aug 17 11:37:51 2018 -0300
+
+    O banco de dados H2 e a criação automatica da base de dados(1)
+
+[33mcommit b0bf505a5b4ad4428805e7c22a99abff2c74640a[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Thu Aug 16 09:49:25 2018 -0300
+
+    Banco de dados H2 e a criacao automatica da base de dados
+
+[33mcommit bd2d8469e88fce92c17cfeb2a6dbac763a3c82c3[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Wed Aug 15 14:56:55 2018 -0300
+
+    Testando primeira classe de dominio - Categoria
+
+[33mcommit c8bc893a11ee693106b15c0f51403f824945707e[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Wed Aug 15 11:52:41 2018 -0300
+
+    REST testado
+
+[33mcommit 9bfde3ce749a88a3f7df5cc5511afa6e6de10566[m
+Author: AFRAIN CALIXTO <calixtoafrain@gmail.com>
+Date:   Wed Aug 15 11:19:01 2018 -0300
+
+    Projeto criado
